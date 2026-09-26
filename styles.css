@@ -29,9 +29,9 @@ h1 {
   margin: 0;
   max-width: 1000px;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.5rem, 5.7vw, 5.4rem);
-  line-height: .99;
-  letter-spacing: -.045em;
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
   font-weight: 500;
 }
 h1 span { color: #374151; }
@@ -93,7 +93,10 @@ h1 span { color: #374151; }
 .link { color: var(--blue); font-weight: 700; font-size: .9rem; }
 .figure-page { padding: 54px 0 84px; }
 .back { display: inline-block; margin-bottom: 30px; color: var(--blue); text-decoration: none; font-weight: 650; }
-.figure-page h1 { max-width: 940px; font-size: clamp(2.3rem, 4.8vw, 4.5rem); }
+.figure-page h1 {
+  max-width: 940px;
+  font-size: clamp(1.9rem, 3.5vw, 3rem);
+}
 .figure-wrap {
   margin: 38px 0 34px;
   padding: 18px;
