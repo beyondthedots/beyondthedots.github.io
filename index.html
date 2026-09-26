@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beyond the Dots</title>
+  <meta name="description" content="Individual-level FOMC policy-rate projections.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <p class="eyebrow">Public research resource</p>
+      <h1>Beyond the Dots <span>— Individual-level FOMC<br class="desktop-break"> policy-rate projections</span></h1>
+
+      <p class="intro">
+        <strong>Beyond the Dots</strong> is a public research resource that provides a consistent,
+        citable database of individual-level federal funds rate projections from the Federal Reserve’s
+        Summary of Economic Projections (SEP). By reconstructing the historical dot plots and organizing
+        them into a longitudinal dataset, the project makes it easier to study the evolution of monetary
+        policy expectations, disagreement among policymakers, and the relationship between projected and
+        subsequently realized policy rates. The site provides regularly updated data, visualizations,
+        methodological documentation, and reproducible code for researchers, students, journalists, and
+        others interested in U.S. monetary policy.
+      </p>
+    </header>
+
+    <section class="disclaimer">
+      <h2>Disclaimer</h2>
+      <p>
+        Beyond the Dots is an independent research project and is not affiliated with, endorsed by, or
+        sponsored by the Board of Governors of the Federal Reserve System or any Federal Reserve Bank.
+        The data and visualizations are compiled from publicly available sources and are provided for
+        research, educational, and informational purposes only. Although reasonable efforts are made to
+        ensure accuracy, all materials are provided “as is.” Users should verify information against
+        official Federal Reserve sources when accuracy is critical. Beyond the Dots and its contributors
+        accept no responsibility or liability for errors, omissions, or losses arising from use of the
+        materials. Nothing on this site constitutes financial, investment, legal, or policy advice.
+      </p>
+    </section>
+
+    <section class="visualizations">
+      <div class="section-heading">
+        <p class="eyebrow">Explore the data</p>
+        <h2>Visualizations</h2>
+      </div>
+
+      <div class="cards">
+        <a class="card" href="latest-sep.html">
+          <div class="preview">
+            <img src="assets/latest_sep_dotplot.png" alt="Preview of latest SEP dot plot"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="placeholder">Latest SEP dot plot</div>
+          </div>
+          <div class="card-copy">
+            <h3>Latest SEP Dot Plot</h3>
+            <p>See the most recent participant-level projections for the federal funds rate.</p>
+            <span class="link">View figure →</span>
+          </div>
+        </a>
+
+        <a class="card" href="forecast-realized.html">
+          <div class="preview">
+            <img src="assets/median_vs_realized.png" alt="Preview of median SEP projection versus realized rate"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="placeholder">Median vs. realized</div>
+          </div>
+          <div class="card-copy">
+            <h3>Projections vs. Realized Rates</h3>
+            <p>Compare median SEP projections and participant dispersion with subsequently realized policy rates.</p>
+            <span class="link">View figure →</span>
+          </div>
+        </a>
+
+        <a class="card" href="disagreement.html">
+          <div class="preview">
+            <img src="assets/disagreement_heatmaps.png" alt="Preview of SEP disagreement heatmaps"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="placeholder">Disagreement heatmaps</div>
+          </div>
+          <div class="card-copy">
+            <h3>Policy-Rate Disagreement</h3>
+            <p>Track the cross-sectional IQR of participant projections across horizons and over time.</p>
+            <span class="link">View figure →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Beyond the Dots · Individual-level FOMC policy-rate projections</p>
+    </footer>
+  </main>
+</body>
+</html>

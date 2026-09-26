@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Median SEP Projection vs. Realized Federal Funds Rate · Beyond the Dots</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container figure-page">
+    <a class="back" href="index.html">← Back to Beyond the Dots</a>
+    <p class="eyebrow">Beyond the Dots</p>
+    <h1>Median SEP Projection vs. Realized Federal Funds Rate</h1>
+    <div class="figure-wrap">
+      <img src="assets/median_vs_realized.png" alt="Median SEP Projection vs. Realized Federal Funds Rate"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="figure-placeholder">Place assets/median_vs_realized.png in the assets folder.</div>
+    </div>
+    <section class="method"><h2>How this figure is generated</h2>
+    <p>For each SEP release, the solid line reports the median participant projection and the shaded band spans the 25th to 75th percentiles. For an SEP released in calendar year <em>t</em>, the 1-year-ahead projection is matched to year <em>t+1</em> and the 2-year-ahead projection to year <em>t+2</em>.</p>
+    <p>Realized policy rates use the daily Federal Funds Effective Rate (DFF) from the Federal Reserve Bank of St. Louis FRED database. For each completed calendar year, the final available daily observation is used as the realized year-end rate. The longer-run SEP projection is not a literal five-year-ahead forecast; the figure therefore uses the realized rate five years after the SEP release only as an empirical benchmark.</p>
+    <p>Lightly shaded annual regions span the first through last SEP release in each calendar year. Gray shading marks the February–April 2020 NBER recession.</p></section>
+  </main>
+</body>
+</html>
