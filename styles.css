@@ -134,3 +134,52 @@ footer { border-top: 1px solid var(--line); padding: 28px 0 42px; color: #7b8794
   .hero { padding-top: 44px; }
   h1 { font-size: 2.5rem; }
 }
+.data-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  padding: 58px 0 64px;
+  border-bottom: 1px solid var(--line);
+}
+
+.data-section h2 {
+  margin: 0 0 14px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.data-section p {
+  color: #374151;
+  max-width: 620px;
+}
+
+.citation-box {
+  margin-top: 18px;
+  padding: 18px 20px;
+  background: #f7f9fb;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.citation-box p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.citation-box a {
+  color: #0072b2;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.citation-box a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .data-section {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
