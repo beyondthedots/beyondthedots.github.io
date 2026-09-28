@@ -229,3 +229,14 @@ footer { border-top: 1px solid var(--line); padding: 28px 0 42px; color: #7b8794
   margin: 18px 0 6px;
   font-size: 0.9rem;
 }
+.download-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.download-count {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
