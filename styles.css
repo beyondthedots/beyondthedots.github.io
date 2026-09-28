@@ -183,3 +183,18 @@ footer { border-top: 1px solid var(--line); padding: 28px 0 42px; color: #7b8794
     gap: 36px;
   }
 }
+.figure-code-note {
+  margin: -12px 0 28px;
+  color: #5f6b7a;
+  font-size: 0.95rem;
+}
+
+.figure-code-note a {
+  color: #0072b2;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.figure-code-note a:hover {
+  text-decoration: underline;
+}
