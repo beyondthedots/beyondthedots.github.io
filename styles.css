@@ -214,3 +214,18 @@ footer { border-top: 1px solid var(--line); padding: 28px 0 42px; color: #7b8794
 .data-note a:hover {
   text-decoration: underline;
 }
+.bibtex-citation {
+  margin: 18px 0 0;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #374151;
+}
+.bibtex-label {
+  margin: 18px 0 6px;
+  font-size: 0.9rem;
+}
