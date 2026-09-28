@@ -198,3 +198,19 @@ footer { border-top: 1px solid var(--line); padding: 28px 0 42px; color: #7b8794
 .figure-code-note a:hover {
   text-decoration: underline;
 }
+.data-note {
+  margin-top: 18px;
+  color: #5f6b7a;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.data-note a {
+  color: #0072b2;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.data-note a:hover {
+  text-decoration: underline;
+}
