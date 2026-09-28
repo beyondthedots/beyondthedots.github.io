@@ -169,39 +169,43 @@ By reconstructing the historical dot plots from 2012 onwards,
   <p>&copy; 2026 Karunya Nimmagadda and Trambak Banerjee · Beyond the Dots</p>
 </footer>
   </main>
+<script src="https://counterapi.com/counterapi.embed.js"></script>
+
 <script>
-  const counterURL =
-    "https://counterapi.com/api/beyondthedots.github.io/download/dataset";
+  const namespace = "beyondthedots.github.io";
+  const action = "download";
+  const key = "dataset";
 
   const countElement = document.getElementById("download-count");
   const downloadButton = document.getElementById("data-download");
 
-  // Display the current count without incrementing it
-  async function loadDownloadCount() {
-    try {
-      const response = await fetch(counterURL + "?readOnly=true");
-      const data = await response.json();
-      countElement.textContent = data.value.toLocaleString();
-    } catch (error) {
-      countElement.textContent = "—";
+  // Read current count when the page loads.
+  counterApi.read(
+    key,
+    action,
+    namespace,
+    {},
+    function(err, res) {
+      if (!err && res) {
+        countElement.textContent = Number(res.value).toLocaleString();
+      }
     }
-  }
+  );
 
-  // Increment only when the Download CSV button is clicked
-  downloadButton.addEventListener("click", async function () {
-    try {
-      const response = await fetch(counterURL, {
-        keepalive: true
-      });
-
-      const data = await response.json();
-      countElement.textContent = data.value.toLocaleString();
-    } catch (error) {
-      // Do not interfere with the download if counting fails
-    }
+  // Increment only when the CSV download button is clicked.
+  downloadButton.addEventListener("click", function() {
+    counterApi.increment(
+      key,
+      action,
+      namespace,
+      {},
+      function(err, res) {
+        if (!err && res) {
+          countElement.textContent = Number(res.value).toLocaleString();
+        }
+      }
+    );
   });
-
-  loadDownloadCount();
 </script>
 </body>
 </html>
